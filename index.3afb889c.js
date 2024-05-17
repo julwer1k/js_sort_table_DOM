@@ -1,0 +1,2 @@
+var e=document.querySelector("thead"),t=document.querySelector("tbody"),r=Array.from(t.rows);e.addEventListener("click",function(e){if("TH"===e.target.tagName){var a=e.target.cellIndex,n=e.target.textContent,o=r.sort(function(e,t){var r=e.cells[a].textContent,o=t.cells[a].textContent;return"Age"===n||"Salary"===n?parseFloat(r.replace(/[$,]/g,""))-parseFloat(o.replace(/[$,]/g,"")):r.localeCompare(o)});t.innerHTML="",o.forEach(function(e){return t.appendChild(e)})}});
+//# sourceMappingURL=index.3afb889c.js.map
